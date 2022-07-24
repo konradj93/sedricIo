@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "[BackOffice] Debug tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "${workspaceFolder}/apps/backoffice/node_modules/jest/bin/jest.js",
+        "--config",
+        "${workspaceFolder}/apps/backoffice/jest.config.js",
+        "--runInBand"
+      ],
+      "cwd": "${workspaceFolder}/apps/backoffice/",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

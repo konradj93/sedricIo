@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.eol": "\n",
+  "prettier.useEditorConfig": false,
+  "aadb2c.ai.id": "38392fcf-7d87-43c5-9955-02a8c40044d9",
+  "aadb2c.ai.key": "qckdekh0pgqlzxsu2fxqrouismc2r5przxtxurys",
+  "aadb2c.ai.maxRows": 24,
+  "aadb2c.ai.timespan": 0,
+  "aadb2c.ai.duration": 24
+}
