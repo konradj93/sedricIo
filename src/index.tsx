@@ -2,7 +2,7 @@ import { ApolloProvider } from '@apollo/client';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import client from './App/api/client';
-import App from './App/views/App';
+import App from './App/views/App/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
