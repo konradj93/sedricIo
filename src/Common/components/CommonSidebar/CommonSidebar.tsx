@@ -1,6 +1,8 @@
 import { DrawerProps, Toolbar, IconButton, Divider, List } from '@mui/material';
 import { CoommonSidebarStyled } from './CommonSidebar.styles';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import useFetchPokeTypes from '../../../Types/hooks/useFetchPokeTypes';
+import CommonSidebarElement from '../CommonSidebarElement/CommontSidebarElement';
 
 export interface CoommonSidebarProps extends DrawerProps {
   toggleDrawer: () => void;
@@ -8,6 +10,8 @@ export interface CoommonSidebarProps extends DrawerProps {
 }
 
 const CommonSidebar = ({ open, toggleDrawer, drawerWidth }: CoommonSidebarProps): JSX.Element => {
+  const { pokeTypes } = useFetchPokeTypes();
+
   return (
     <CoommonSidebarStyled variant="permanent" open={open} drawerWidth={drawerWidth}>
       <Toolbar
@@ -23,7 +27,9 @@ const CommonSidebar = ({ open, toggleDrawer, drawerWidth }: CoommonSidebarProps)
       </Toolbar>
       <Divider />
       <List component="nav">
-        <Divider sx={{ my: 1 }} />
+        {pokeTypes?.map((el) => (
+          <CommonSidebarElement key={el} type={el} />
+        ))}
       </List>
     </CoommonSidebarStyled>
   );
