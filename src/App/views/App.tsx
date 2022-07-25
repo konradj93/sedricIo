@@ -1,9 +1,12 @@
 import React from 'react';
+import CommonLayout from '../../Common/view/CommonLayout/CommonLayout';
 
-const App = ():JSX.Element => {
+const App = (): JSX.Element => {
   return (
-   <h1>Hello Sedric</h1>
+    <CommonLayout pageTitle="Dashboard">
+      <h1>Hello Sedrick</h1>
+    </CommonLayout>
   );
-}
+};
 
 export default App;
